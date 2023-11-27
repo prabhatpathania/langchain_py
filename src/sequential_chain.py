@@ -36,7 +36,7 @@ chain2 = LLMChain(llm=llm, prompt=second_input_prompt,verbose=True,output_key='d
 
 third_input_prompt=PromptTemplate(
     input_variables=['dob'],
-    template="Mention 5 major events that happened around that {dob} in the world"
+    template="Mention 5 major events that happened in the world, in the same month as the month in {dob}"
 )
 chain3 = LLMChain(llm=llm, prompt=third_input_prompt,verbose=True,output_key='description')
 
