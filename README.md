@@ -13,5 +13,3 @@ Here I have maintained some simple examples to playaround with LangChain modules
 More about LangChain: https://python.langchain.com/docs/get_started/introduction
 
 More about Streamlit: https://streamlit.io/
-
-Inspired by YT tutorial: https://youtu.be/_FpT1cwcSLg?si=tmLaA80okHrm1xGI
