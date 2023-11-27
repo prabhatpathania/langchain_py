@@ -7,14 +7,14 @@ import streamlit as st
 
 os.environ["OPENAI_API_KEY"] = openai_key
 
-
+# User input
 st.title('Translate and Learn')
 input_text=st.text_input("Enter the text you want to translate to Dutch")
 
 chat = ChatOpenAI()
-
+## Prompt
 messages = [
-    SystemMessage(
+    SystemMessage( 
         content="""You are a helpful assistant that translates English to Dutch for people who do not understand Dutch. 
                 Your job is help translate the given text using child friendly language and writing sentence not longer than 12 words. 
                 If you are unable to translate a text for the user, you will convey the same in a polite tone.

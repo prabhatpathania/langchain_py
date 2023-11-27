@@ -14,7 +14,7 @@ os.environ["OPENAI_API_KEY"] = openai_key
 
 #Streamlit Framework
 
-st.title('Celebrity Search Resuts')
+st.title('Celebrity Search Results')
 input_text=st.text_input("Search the topic you want")
 
 ##Prompt Templates
@@ -30,18 +30,21 @@ chain = LLMChain(llm=llm, prompt=first_input_prompt,verbose=True,output_key='per
 
 second_input_prompt=PromptTemplate(
     input_variables=['person'],
-    template="on which date was {person} born"
+    template="Find the date on which the person being dicsussed in {person} was born."
 )
 chain2 = LLMChain(llm=llm, prompt=second_input_prompt,verbose=True,output_key='dob')
 
+# Get events in the same moth
 third_input_prompt=PromptTemplate(
     input_variables=['dob'],
-    template="Mention 5 major events that happened in the world, in the same month as the month in {dob}"
+    template="""Mention 5 major events that happened in the world in the same months as of {dob}. 
+    The year can be different but month must be the same."""
 )
 chain3 = LLMChain(llm=llm, prompt=third_input_prompt,verbose=True,output_key='description')
 
 parent_Chain=SequentialChain(
     chains=[chain, chain2, chain3],input_variables=['name'],output_variables=['person','dob','description'],verbose=True)
+
 
 if input_text:
     st.write(parent_Chain({'name':input_text}))
