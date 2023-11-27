@@ -6,8 +6,9 @@ Here I have maintained some simple examples to playaround with LangChain modules
 
 2. Clone and Install depenedencies `pip install requirements.txt`
 
-3. Maintain this key in NEW file => /src/constants.py > openai_key='<your OpenAI key>'
-
+3. Maintain this key in NEW file `/src/constants.py`
+   > openai_key='<your OpenAI key>'
+   
 4. Run individual examples:
 `Use command "streamlit run .\<file_path>" to run different examples`
 
