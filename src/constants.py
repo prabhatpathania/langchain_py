@@ -1,1 +1,1 @@
-openai_key='<openAI key>'
+openai_key='<openAI - key>'
