@@ -1,5 +1,7 @@
 # Testing OpenAI modules with LangChain
 
+![GenAI_translator](https://github.com/prabhatpathania/langchain_py/assets/5909102/528f8e6f-8cad-40a3-8f3d-71bdaf30acce)
+
 Here I have maintained some simple examples to playaround with LangChain modules and working with LLM
 
 1. Pre-requisite: Generate an API key using link https://platform.openai.com/api-keys
