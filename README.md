@@ -11,4 +11,7 @@ Here I have maintained some simple examples to playaround with Langchain modules
 
 
 More about Langchain: https://python.langchain.com/docs/get_started/introduction
+
 More about Streamlit: https://streamlit.io/
+
+Inspired by YT tutorial: https://youtu.be/_FpT1cwcSLg?si=tmLaA80okHrm1xGI
