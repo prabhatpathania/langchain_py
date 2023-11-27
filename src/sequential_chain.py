@@ -40,14 +40,8 @@ third_input_prompt=PromptTemplate(
 )
 chain3 = LLMChain(llm=llm, prompt=third_input_prompt,verbose=True,output_key='description')
 
-
-
 parent_Chain=SequentialChain(
     chains=[chain, chain2, chain3],input_variables=['name'],output_variables=['person','dob','description'],verbose=True)
-
-
-
-
 
 if input_text:
     st.write(parent_Chain({'name':input_text}))
