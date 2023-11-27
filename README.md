@@ -1,6 +1,6 @@
 # Testing OpenAI modules with LangChain
 
-![GenAI_translator](https://github.com/prabhatpathania/langchain_py/assets/5909102/528f8e6f-8cad-40a3-8f3d-71bdaf30acce)
+![image](https://github.com/prabhatpathania/langchain_py/assets/5909102/d7a16cb5-b4d5-4cce-b4c2-10d99ceedf4a)
 
 Here I have maintained some simple examples to playaround with LangChain modules and working with LLM
 
