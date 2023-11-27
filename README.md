@@ -1,6 +1,6 @@
-# Testing OpenAI modules with Langchain
+# Testing OpenAI modules with LangChain
 
-Here I have maintained some simple examples to playaround with Langchain modules and working with LLM
+Here I have maintained some simple examples to playaround with LangChain modules and working with LLM
 
 1. Pre-requisite: Generate an API key using link https://platform.openai.com/api-keys
 
@@ -10,7 +10,7 @@ Here I have maintained some simple examples to playaround with Langchain modules
 `Use command "streamlit run .\<file_path>" to run different examples`
 
 
-More about Langchain: https://python.langchain.com/docs/get_started/introduction
+More about LangChain: https://python.langchain.com/docs/get_started/introduction
 
 More about Streamlit: https://streamlit.io/
 
