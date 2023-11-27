@@ -20,7 +20,7 @@ input_text=st.text_input("Search the topic you want")
 
 first_input_prompt=PromptTemplate(
     input_variables=['name'],
-    template="Tell me about celebrity {name}"
+    template="Tell me about celebrity {name} in less than 120 words"
 )
 
 ##OpenAI LLMs
@@ -35,10 +35,6 @@ second_input_prompt=PromptTemplate(
 chain2 = LLMChain(llm=llm, prompt=second_input_prompt,verbose=True,output_key='dob')
 
 parent_Chain=SimpleSequentialChain(chains=[chain, chain2], verbose=True)
-
-
-
-
 
 if input_text:
     st.write(parent_Chain.run(input_text))

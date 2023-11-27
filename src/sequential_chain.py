@@ -21,7 +21,7 @@ input_text=st.text_input("Search the topic you want")
 
 first_input_prompt=PromptTemplate(
     input_variables=['name'],
-    template="Tell me about celebrity {name}"
+    template="In less than 120 words, you have to tell me about celebrity {name}, their professional achievements and what they are famous for. "
 )
 
 ##OpenAI LLMs
