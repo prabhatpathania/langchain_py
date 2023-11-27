@@ -4,9 +4,11 @@ Here I have maintained some simple examples to playaround with LangChain modules
 
 1. Pre-requisite: Generate an API key using link https://platform.openai.com/api-keys
 
-2. Maintain this key in file /src/constants.py
+2. Clone and Install depenedencies `pip install requirements.txt`
 
-3. Run individual examples:
+3. Maintain this key in file /src/constants.py
+
+4. Run individual examples:
 `Use command "streamlit run .\<file_path>" to run different examples`
 
 
