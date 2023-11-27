@@ -1,1 +1,1 @@
-openai_key=''
+openai_key='test'
