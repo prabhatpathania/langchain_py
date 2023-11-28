@@ -44,19 +44,10 @@ def main():
 
     if uploaded_file is not None:
         try:
-            # wb = load_workbook(uploaded_file, read_only=False)
-            # print(wb.)
             df = load_data(uploaded_file)
-            # st.write('Data Preview:')
-            # AgGrid(df)
             st.dataframe(df)
-            print(df.head)
-            # arrValues = df.values
-            
+            print(df.head)            
             askGPT(df.head)
-
-        # except ImportError:
-        #     st.error("Please install the 'openpyxl' package to read Excel files.")
         except Exception as e:
             st.error(f"An error occurred: {e}")
 
