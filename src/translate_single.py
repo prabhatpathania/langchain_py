@@ -20,7 +20,7 @@ messages = [
                 If you are unable to translate a text for the user, you will convey the same in a polite tone.
                 For the response to the input, You will : 
                 1. translate the user input to simple Dutch
-                2. In a separate section, in simple English, explain how to pronounce the translated text. 
+                2. In a separate section, in simple English with a clear label, explain how to pronounce the translated text. 
                 3. In simple english, give 2 examples (as bullet points) of scenarios where dutch people would use such a word/sentence
                 """
     ),
