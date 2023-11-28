@@ -1,5 +1,7 @@
 # Testing OpenAI modules with LangChain
 
+![image](https://github.com/prabhatpathania/langchain_py/assets/5909102/d7a16cb5-b4d5-4cce-b4c2-10d99ceedf4a)
+
 Here I have maintained some simple examples to playaround with LangChain modules and working with LLM
 
 1. Pre-requisite: Generate an API key using link https://platform.openai.com/api-keys
