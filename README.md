@@ -17,7 +17,7 @@ Here I have maintained some simple examples to playaround with LangChain modules
 # Features
 1. Translate and Learn texts in Dutch
 2. Use Sequential Chain to know some interesting facts about your favorite celebrity
-3. Use OpenAI LLM to generate prompts based on a CSV file data (example: sales order data)
+3. Generate prompts based on a CSV file data (example: sales order data)
 
 
 # References
