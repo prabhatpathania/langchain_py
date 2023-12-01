@@ -5,9 +5,7 @@ from langchain.llms import OpenAI
 
 import streamlit as st
 
-
 os.environ["OPENAI_API_KEY"] = openai_key
-
 
 st.title('LangChain Demo')
 input_text=st.text_input("Search the topic you want")
