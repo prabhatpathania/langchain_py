@@ -13,7 +13,6 @@ def load_data(file):
 
 def askGPT(sales_data):
 
-    print("I am GPT")
     print(sales_data)
     os.environ["OPENAI_API_KEY"] = openai_key
     ##OpenAI LLMs
@@ -27,7 +26,8 @@ def askGPT(sales_data):
         Your job is:
         1. To compare the price of each order to find the order with highest price value. Double check this.
         Then tell me the order ID and price of the order that has the highest price.
-        2. Tell me if you see any trend in the data in terms of which material has been ordered more lately"""
+        2. Tell me if you see any trend in the data in terms of which material has been ordered more lately. 
+        This is a key input from your side so you can take your time and try to find a trend."""
     )
     chain = LLMChain(llm=llm, prompt=sales_analysis_prompt) #,verbose=True)
     if sales_data:
