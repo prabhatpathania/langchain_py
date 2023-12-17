@@ -24,10 +24,11 @@ def askGPT(sales_data):
         This contains sales order information of different orders over the years.
         The data is for columns: order_id, product_ID, order_date, customer_id and price (in the same order) 
         Your job is:
-        1. To compare the price of each order to find the order with highest price value. Double check this.
-        Then tell me the order ID and price of the order that has the highest price.
-        2. Tell me if you see any trend in the data in terms of which material has been ordered more lately. 
-        This is a key input from your side so you can take your time and try to find a trend."""
+        1. To compare the price of each order to find the order with highest price value.
+        Then tell me the order ID and price of the order that has the highest price. 
+        Make sure that you have double checked that the order you return has the highest price.
+        2. Tell me if you see any trend in the data in terms of which material has been ordered more recently comparing the dates. 
+        This is a key input from your side so you can take your time and try to find a trend and make sure the order id and dates are matching."""
     )
     chain = LLMChain(llm=llm, prompt=sales_analysis_prompt) #,verbose=True)
     if sales_data:
